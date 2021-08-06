@@ -1,0 +1,10 @@
+function getCount(objects) {
+    let res = 0;
+    objects.forEach((value) => {
+        let resProm;
+        for (let p in value) {
+            if (resProm == value[p]) res++
+            else resProm = value[p]
+    } 
+    }); return res
+}
